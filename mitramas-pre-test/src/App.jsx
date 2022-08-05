@@ -1,10 +1,13 @@
-import { useState } from "react";
-
+import Sidebars from "./Components/Sidebars";
 function App() {
   return (
-    <div>
-      <h1>tes</h1>
-    </div>
+    <>
+      <div className="flex">
+        <div>
+          <Sidebars />
+        </div>
+      </div>
+    </>
   );
 }
 
