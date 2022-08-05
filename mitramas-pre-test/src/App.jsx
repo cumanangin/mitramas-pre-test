@@ -3,9 +3,7 @@ function App() {
   return (
     <>
       <div className="flex">
-        <div>
-          <Sidebars />
-        </div>
+        <Sidebars />
       </div>
     </>
   );
