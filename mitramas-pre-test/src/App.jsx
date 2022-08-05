@@ -1,9 +1,13 @@
 import Sidebars from "./Components/Sidebars";
+import Header from "./Components/Header";
+
 function App() {
   return (
     <>
       <div className="flex">
-        <Sidebars />
+        <div>
+          <Sidebars />
+        </div>
       </div>
     </>
   );
