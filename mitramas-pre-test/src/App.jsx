@@ -5,8 +5,10 @@ function App() {
   return (
     <>
       <div className="flex">
-        <div>
-          <Sidebars />
+        <Sidebars />
+        <div className="flex-1">
+          <Header />
+          tes
         </div>
       </div>
     </>
