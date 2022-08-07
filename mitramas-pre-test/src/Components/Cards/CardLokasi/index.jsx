@@ -34,12 +34,12 @@ const Lokasi = () => {
   };
 
   return (
-    <div className="bg-white h-full">
+    <div className="bg-white rounded-2xl h-full">
       <div className="mobile:w-full mobile:mb-5 tablet:w-full ">
         <div className="flex justify-around">
           <span>Lokasi</span>
           <span onClick={handleIsShow} className="hover:cursor-pointer">
-            {isShow ? "Tutup" : "Tampilkan semua"}
+            {isShow ? "Sembunyikan" : "Tampilkan semua"}
           </span>
         </div>
 
