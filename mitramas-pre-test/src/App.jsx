@@ -2,6 +2,7 @@ import Sidebars from "./Components/Sidebars";
 import Header from "./Components/Header";
 import CardProfileOffice from "./Components/Cards/CardProfileOffice";
 import Lokasi from "./Components/Cards/CardLokasi";
+import Bankrelasi from "./Components/Cards/CardBankRelasi";
 
 function App() {
   return (
@@ -15,11 +16,8 @@ function App() {
             <div className="mobile:flex mobile:flex-col mobile:justify-evenly mobile:my-5 mobile:mx-5 tablet:m-0 tablet:w-full tablet:h-full">
               <Lokasi />
               <div className="my-5">
-                <div className="tablet:flex bg-slate-500">
-                  <div className="tablet:flex-col">
-                    <div>akun bank</div>
-                    <div>relasi</div>
-                  </div>
+                <div className="tablet:flex tablet:w-full tablet:h-full">
+                  <Bankrelasi />
                   <div className="tablet:flex bg-emerald-700">Aktivitas</div>
                 </div>
               </div>
