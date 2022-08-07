@@ -27,7 +27,7 @@ const Sidebars = () => {
     <>
       {showSidebar ? (
         <div className="">
-          <div className="bg-white h-screen mobile:w-10 ease-in-out duration-300 mobile:py-2">
+          <div className="bg-white mobile:h-screen mobile:w-10 ease-in-out duration-300 mobile:py-2 pc:h-screen hover:cursor-pointer">
             <div className="flex justify-center items-center py-2">
               <ImCancelCircle onClick={handleSidebar} />
             </div>
@@ -56,7 +56,7 @@ const Sidebars = () => {
         </div>
       ) : (
         <div className="mobile:w-10 py-2">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center ease-in duration-300 hover:cursor-pointer">
             <GiHamburgerMenu onClick={handleSidebar} />
           </div>
         </div>
