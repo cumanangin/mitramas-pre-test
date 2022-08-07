@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import cocaCola from "../../../assets/coca-cola-4.svg";
 import Office from "../../../assets/office1.jpg";
 import { BiEditAlt } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
@@ -17,14 +16,6 @@ const CardProfileOffice = () => {
     }
   };
 
-  const aktif = isActive;
-
-  const account = {
-    name: "John Doe",
-  };
-
-  //const active = handleIsActive();
-
   const company = {
     address: "Jl.Tebet Raya No.42, Jakarta Selatan",
     pic: "John Doe",
@@ -36,9 +27,9 @@ const CardProfileOffice = () => {
 
   return (
     <div className="mobile:mx-5 tablet:m-0 tablet:w-[50%] tablet:h-full pc:h-full">
-      <div className="bg-white w-full mobile:h-full mobile:m-auto tablet:m-0 ">
+      <div className="bg-white rounded-2xl w-full mobile:h-full mobile:m-auto tablet:m-0 ">
         <div
-          className="flex relative bg-cover"
+          className="flex relative bg-cover rounded-t-2xl"
           style={{ backgroundImage: `url(${Office})` }}
         >
           <div className="absolute w-full z-10 mobile:justify-center items-center">
