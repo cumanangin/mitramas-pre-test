@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import CardProfileOffice from "./Components/Cards/CardProfileOffice";
 import Lokasi from "./Components/Cards/CardLokasi";
 import Bankrelasi from "./Components/Cards/CardBankRelasi";
+import Aktivitas from "./Components/Cards/CardAktivitas";
 
 function App() {
   return (
@@ -16,14 +17,13 @@ function App() {
             <div className="mobile:flex mobile:flex-col mobile:justify-evenly mobile:my-5 mobile:mx-5 tablet:m-0 tablet:w-full tablet:h-full">
               <Lokasi />
               <div className="my-5">
-                <div className="tablet:flex tablet:w-full tablet:h-full">
+                <div className="tablet:flex tablet:w-full tablet:h-full tablet:gap-x-3">
                   <Bankrelasi />
-                  <div className="tablet:flex bg-emerald-700">Aktivitas</div>
+                  <Aktivitas />
                 </div>
               </div>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
     </>
