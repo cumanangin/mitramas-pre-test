@@ -5,13 +5,26 @@ import { TbBuildingSkyscraper } from "react-icons/tb";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCancelCircle } from "react-icons/im";
 import cocaCola from "../../assets/coca-cola-4.svg";
+import { Link } from "react-router-dom";
 
 const Sidebars = () => {
   const sidebarIcons = [
-    BiHomeCircle,
-    HiOutlineTicket,
-    BiTask,
-    TbBuildingSkyscraper,
+    {
+      icon: <BiHomeCircle size={30} />,
+      path: "/home",
+    },
+    {
+      icon: <HiOutlineTicket size={30} />,
+      path: "/#",
+    },
+    {
+      icon: <BiTask size={30} />,
+      path: "/#",
+    },
+    {
+      icon: <TbBuildingSkyscraper size={30} />,
+      path: "/perusahaan",
+    },
   ];
 
   const [showSidebar, setShowSidebar] = useState(false);
@@ -38,14 +51,14 @@ const Sidebars = () => {
               {/* div for icon sidebar */}
               <ul className="">
                 {sidebarIcons.map((itemIcons, index) => {
-                  const Icons = sidebarIcons[index];
+                  //const Icons = itemIcons.icon;
                   return (
                     <li
-                      key={itemIcons.index}
+                      key={index}
                       className="flex justify-center items-center py-3 hover:bg-[#F0F6F1] hover:cursor-pointer hover:duration-200"
                     >
                       <div className="mobile:w-7">
-                        <Icons size={25} />
+                        <Link to={itemIcons.path}>{itemIcons.icon}</Link>
                       </div>
                     </li>
                   );
